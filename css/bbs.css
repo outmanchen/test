@@ -1,0 +1,36 @@
+.tz_left{
+    float: right;
+}
+.search_top{
+    width: 78px;
+    height: 30px;
+    background: #e4b9c0;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+.search_bottom{
+    float: contour;
+}
+.bbs_news_title{
+    color: #761c19;
+    background-color: #e4b9c0;
+}
+.bbs_news_context{
+    background-color: #FFFFFF;
+    margin: 0px 0px 0px 0px;
+}
+.bbs_news_img{
+    width: auto;
+    height: auto;
+    max-width: 3%;
+    max-height:3%;
+}
+.bbs_news_time{
+    float: right;
+}
+.bbs_news_td{
+    vertical-align: top;
+
+}

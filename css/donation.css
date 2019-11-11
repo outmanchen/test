@@ -1,0 +1,51 @@
+.donate_nav{
+    margin-left: 2.5rem;
+}
+.donate_tr{
+    height: 5%;
+
+}
+.donate_td{
+    width:75%;
+    border: 0px solid black;
+    overflow:hidden;
+}
+.donate_span_title{
+    font-size: 14px;
+    float: left;
+    margin: 1px 1px 1px 1px;
+}
+.donate_input_jzxm{
+    width: 10%;
+    float: left;
+    margin: 1px 1px 1px 1px;
+}
+.donate_input_zffs{
+    width: 25%;
+    float: left;
+    margin: 1px 1px 1px 1px;
+}
+.donate_list_td{
+    vertical-align: top;
+}
+.donate_list_box{
+    width: 100%;
+    margin-top: 2rem;
+}
+.table_title{
+    font-weight: bold;
+    font-family: YouYuan;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px ;
+    margin-bottom: 5px;
+    border-bottom: #9d9d9d solid 1px;
+}
+.table_item_style1{
+    font-weight:lighter;
+    font-size: 16px;
+     background-color: #feecf9;
+ }
+.table_item_style2{
+    font-weight:lighter;
+    font-size: 16px;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help dog</title>
+    <!--引入jquery.js-->
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <!--引入index.js-->
+    <script type="text/javascript" src="../js/index.js"></script>
+    <!--引入vue.js-->
+    <script src="../js/vue.js"></script>
+    <!--引入bootstrap.css-->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!--引入index.css-->
+    <link href="../css/index.css" rel="stylesheet">
+</head>
+<body>
+<!--首页图片-->
+<div>
+    <img class="img-sf-first" src="../img/img-index-01.jpg" />
+</div>
+<header><div id="header"></div></header>
+
+<!--main-->
+<table class="main_table">
+    <tr>
+        <!--通知列表-->
+        <td class="massage" align="center">
+            <img class="img-sf-left-list-icon" src="../img/icon-long.png" />
+            <ul class="list-group text-color ">
+                <li class="list-group-item"><a class="massage-li-a" href="commonweal.html" >公益项目</a><span class="badge list-span">期</span></li>
+                <li class="list-group-item"><a class="massage-li-a" href="adopt.html" >领养动物</a><span class="badge list-span">待</span></li>
+                <li class="list-group-item"><a class="massage-li-a" href="donation.html" >爱心捐助</a><span class="badge list-span">你</span></li>
+                <li class="list-group-item"><a class="massage-li-a" href="register.html" >加入我们</a><span class="badge list-span">的</span></li>
+                <li class="list-group-item"><a class="massage-li-a" href="contact.html" >联系我们</a><span class="badge list-span">加</span></li>
+                <li class="list-group-item"><a class="massage-li-a" href="bbs.html" >Help论坛</a><span class="badge list-span">入</span></li>
+            </ul>
+            <div class="panel panel-danger userbox">
+                <div class="panel-heading">
+                    <h3 class="panel-title">爱宠铺子</h3>
+                </div>
+                <div class="panel-body">
+                    <img src="../img/taobao.jpg" class="img-sf-left-shop" align="left"/>
+                    <a href="https://www.taobao.com">【Help爱宠狗粮铺子】<br>玩具|衣物|食物</a>
+                </div>
+
+            </div>
+        </td>
+
+        <!--轮播图-->
+        <td class="lb">
+            <div id="wrapper">
+                <div id="banner">
+                    <ul class="imgList">
+                        <li><a href="#"><img class="img-sf-second" src="../img/dog/dog_20.jpg" /> </a></li>
+                        <li><a href="#"><img class="img-sf-second" src="../img/dog/dog_30.jpg" /> </a></li>
+                        <li><a href="#"><img class="img-sf-second" src="../img/dog/dog_31.jpg" /> </a></li>
+                        <li><a href="#"><img class="img-sf-second" src="../img/dog/dog_11.jpg" /> </a></li>
+                        <li><a href="#"><img class="img-sf-second" src="../img/dog/dog_16.jpg" /> </a></li>
+                    </ul>
+                    <span id="prev"><</span>
+                    <span id="next">></span>
+                    <ul class="infoList">
+                        <li class="infoOn">1/5</li>
+                        <li>2/5</li>
+                        <li>3/5</li>
+                        <li>4/5</li>
+                        <li>5/5</li>
+                    </ul>
+                </div>
+                <ul class="indexList">
+                    <li class="active"><span class="indexOn">我们也想拥有温暖的家</span></li>
+                    <li><span>我就休息一下 一下下</span></li>
+                    <li><span>被疾病缠身 却还是在努力活着的大黄</span></li>
+                    <li><span>公园的小护卫 小黄等待认领</span></li>
+                    <li><span>怎样才能靠自己养活自己？</span></li>
+                </ul>
+            </div>
+        </td>
+        <td class="userinfo" align="center">
+            <!--公告栏-->
+            <div class="panel panel-danger messagebox" >
+                <div class="panel-heading">
+                    <h3 class="panel-title">公告</h3>
+                </div>
+                <!-- 通知 -->
+                <marquee behavior="scroll" direction="up" scrolldelay="10" class="text-color marqueebox" >
+                    【2019年10月25日 通知】<br>
+                    &nbsp; &nbsp;据悉，近日彩虹楼梯下的小黑离奇失踪了！<br>
+                    暂不知其去向，请遇见小黑的同学及时反馈情况!<br>
+                    联系方式：<br>
+                    电话：19858199976 <br>
+                    QQ：837080543
+                    <!--                    <img src="../img/gg-lost.jpg" class="img-sf-left-list-icon">-->
+                </marquee>
+            </div>
+            <!--登陆注册框-->
+            <div class="panel panel-danger userbox" >
+                <div class="panel-heading">
+                    <h3 class="panel-title">用户登陆</h3>
+                </div>
+                <div class="panel-body" >
+                   <img class="image-user" src="../img/user.png"/>
+                </div>
+                <div class="input-group userinput">
+                    <span class="input-group-addon userinput-label">账号</span>
+                    <input type="text" class="form-control" placeholder="输入Help账号">
+                </div>
+                <div class="input-group userinput">
+                    <span class="input-group-addon userinput-label">密码</span>
+                    <input type="text" class="form-control" placeholder="输入Help密码">
+                </div>
+                <div class="input-group userinput">
+                    <button type="button" class="btn btn-default userinput-label" onClick="log()">登陆</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-default userinput-label" onClick="register()">注册</button>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<!--公益项目-->
+<table class="main_table">
+    <!--分界线-->
+    <tr>
+        <td colspan="3">
+            <!--公益项目Label-->
+            <h3 class="label-style">公益项目</h3>
+            <hr class="hr">
+        </td>
+    </tr>
+    <!--Bigview-->
+    <tr>
+        <td rowspan="2" class="bigviewbox">
+            <div class="imgdiv" >
+                <img src="../img/dog/dog_19.jpg" class="img-bigview"/>
+                <label class="label-zjwxr">
+                    <font style="font-weight: bold;font-size: 3rem">"拯救汪星人"公益活动</font><br>
+                    <font style="font-weight: lighter;font-size: 1.5rem">
+                        &nbsp; &nbsp;加入我们！加入“拯救汪星人”！<br>
+                        &nbsp; &nbsp;组织心愿者去学校附近寻找和帮助流浪狗，<br>
+                        登记信息,派发物资，为了方便日后，可以联系<br>
+                        他们主人，让他们回家和主人团聚。<br>
+                        &nbsp; &nbsp;在这个世界上有那么一群小动物，他们流离<br>
+                        失所，流落街头，挨饿受冻。只要人人付出一点<br>
+                        爱，世界变得更美好，让我们一起去关爱和行动<br>
+                        ，给流落街头的流浪狗带去一些温暖，让它们感<br>
+                        受杭州这座温暖成市。<br>
+                    </font>
+                    <div class="time">2019-10-26</div>
+                </label>
+            </div>
+        </td>
+        <!--smallview-->
+        <td class="smallviewbox">
+            <img src="../img/dog/dog_10.jpg" class="img-smallview"/>
+            <label class="label-zjwxr">
+                <font style="font-weight: bold;font-size: 3rem">"关爱流浪狗,我们在行动"</font><br>
+                <font style="font-weight: lighter;font-size: 1.5rem">
+                    &nbsp; &nbsp;本次活动旨在呼吁我校学生提高闲置资<br>
+                    &nbsp; &nbsp;源利用率，关爱流浪动物，传递寒冬温<br>
+                    暖，为公益事业助力。
+                </font>
+            </label>
+        </td>
+    </tr>
+    <!--小video-->
+    <tr>
+        <td>
+            <img src="../img/dog/dog_18.jpg" class="img-smallview"/>
+            <label class="label-zjwxr">
+                <font style="font-weight: bold;font-size: 3rem">"这个冬天不会冷"</font><br>
+                <font style="font-weight: lighter;font-size: 1.5rem">
+                    &nbsp; &nbsp;这里是家，这里有爱、有温暖、有朋<br>
+                    &nbsp; &nbsp;友，环境并不优越但却稳定。<br>
+                </font>
+            </label>
+        </td>
+    </tr>
+
+</table>
+<br><br>
+<!--领养宠物-->
+<table class="main_table">
+    <!--分界线-->
+    <tr >
+        <td colspan="3">
+            <!--爱心捐助Label-->
+            <h3 class="label-style" >领养爱宠</h3>
+            <hr class="hr" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="container">
+                <img src="../img/dog/dog_01.jpg" class="pic1 limitpic"  />
+                <img src="../img/dog/dog_02.jpg" class="pic2 limitpic"  />
+                <img src="../img/dog/dog_03.jpg" class="pic3 limitpic"  />
+                <img src="../img/dog/dog_04.jpg" class="pic4 limitpic"  />
+                <img src="../img/dog/dog_13.jpg" class="pic5 limitpic"  />
+                <img src="../img/dog/dog_06.jpg" class="pic6 limitpic"  />
+                <img src="../img/dog/dog_07.jpg" class="pic7 limitpic"  />
+                <img src="../img/dog/dog_08.jpg" class="pic8 limitpic"  />
+                <img src="../img/dog/dog_14.jpg" class="pic9 limitpic"  />
+                <img src="../img/dog/dog_10.jpg" class="pic10 limitpic" />
+                <img src="../img/dog/dog_11.jpg" class="pic11 limitpic" />
+            </div>
+        </td>
+    </tr>
+</table>
+
+<!--爱心捐助-->
+<table class="main_table">
+    <!--分界线-->
+    <tr >
+        <td >
+            <!--爱心捐助Label-->
+            <h3 class="label-style" >爱心捐助</h3>
+            <hr class="hr" >
+        </td>
+        <td >
+            <!--捐助公示Label-->
+            <h3 class="label-style-right">捐助公示</h3>
+            <hr class="hr" >
+        </td>
+    </tr>
+    <tr>
+        <td class="lsjk_box" align="center">
+            <div class="div_lsjk">
+                历史捐赠金额（万元）
+                <span class="span_lsjk" id="hNumber">125,256.2</span>
+                <span >&nbsp;|&nbsp;</span>
+                2019年捐赠金额（万元）
+                <span class="span_lsjk" id="nNumber">14,352.8</span>
+            </div>
+
+        </td>
+        <td rowspan="2" class="jzgs-td" align="center">
+            <marquee onmouseout="this.start()" onmouseover="this.stop()" scrollamount="3"
+                     scrolldelay="10" direction="up" >
+					  <span class="span-mar">
+                          感谢 陈**先生捐助100元爱宠基金，成为爱宠达人！！<br>
+                          感谢 夏**女士捐助58元爱宠基金，成为爱宠达人！！<br>
+						  感谢 李**女士捐助68元爱宠基金，成为爱宠达人！！<br>
+                          感谢 赵**女士捐助68元爱宠基金，成为爱宠达人！！<br>
+                          感谢 王**先生捐助68元爱宠基金，成为爱宠达人！！<br>
+                      </span>
+            </marquee>
+        </td>
+    </tr>
+    <tr >
+        <td class="jk_btn_box" align="center">
+            <div class="jk_btn"><a class="jk_div1">我要为它捐款</a><a class="jk_div2">成为爱宠达人</a></div>
+        </td>
+    </tr>
+    <tr>
+        <!--smallview-->
+        <td class="smallviewbox" align="center">
+            <img src="../img/dog/dog_32.jpg" class="img-jk-list"/>
+            <img src="../img/dog/dog_33.jpg" class="img-jk-list"/>
+            <img src="../img/dog/dog_34.jpg" class="img-jk-list"/>
+            <img src="../img/dog/dog_35.jpg" class="img-jk-list"/>
+            <img src="../img/dog/dog_36.jpg" class="img-jk-list"/>
+            <img src="../img/dog/dog_38.jpg" class="img-jk-list"/>
+        </td>
+        <td class="about-box">
+            <!--关于我们Label-->
+            <h3 class="label-style-right" >关于我们</h3>
+            <hr class="hr" >
+            <div class="about">
+                <span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;我们是一群杭州的普通志愿者，大家聚在一起，为了流浪动物，也为了我们自己，在做这些我们认为有意义的事情，保护动物，宣传环保，倡导人类素食。
+我们有愿望，但是绝不是祈求，我们期待爱，但绝不是怜悯。<br>如果你想领养、助养、加入志愿者，请联系：19858199976<br>
+                </span>
+                <span>123</span>
+            </div>
+
+        </td>
+    </tr>
+
+</table>
+<!--论坛-->
+<table class="main_table">
+    <!--分界线-->
+    <tr >
+        <td colspan="6">
+            <!--Help论坛Label-->
+            <h3 class="label-style" >Help论坛</h3>
+            <hr class="hr" >
+        </td>
+    </tr>
+    <tr>
+        <td class="search-box" colspan="6">
+            <div class="box" >
+                <input type="text" name="search" class="search-input" placeholder="请输入关键字">
+                <div class="search">搜索</div><br>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="list-first">
+            <img src="../img/dog/dog_34.jpg" class="img-search-list"/>
+        </td>
+        <td class="list-second">
+             <span class="news">
+                牧师为帮流浪狗找新家，将狗狗带入...
+            </span>
+            <div class="time time-list">2019-10-26</div>
+        </td>
+        <td class="list-first">
+            <img src="../img/dog/dog_35.jpg" class="img-search-list"/>
+        </td>
+        <td class="list-second">
+             <span class="news">
+                牧师为帮流浪狗找新家，将狗狗带入...
+            </span>
+            <div class="time time-list">2019-10-26</div>
+        </td>
+        <td class="list-first">
+            <img src="../img/dog/dog_36.jpg" class="img-search-list"/>
+        </td>
+        <td class="list-second">
+             <span class="news">
+                牧师为帮流浪狗找新家，将狗狗带入...
+            </span>
+            <div class="time time-list">2019-10-26</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="list-first">
+            <img src="../img/dog/dog_40.jpg" class="img-search-list"/>
+        </td>
+        <td class="list-second">
+             <span class="news">
+                牧师为帮流浪狗找新家，将狗狗带入...
+            </span>
+            <div class="time time-list">2019-10-26</div>
+        </td>
+        <td class="list-first">
+            <img src="../img/dog/dog_38.jpg" class="img-search-list"/>
+        </td>
+        <td class="list-second">
+             <span class="news">
+                牧师为帮流浪狗找新家，将狗狗带入...
+            </span>
+            <div class="time time-list">2019-10-26</div>
+        </td>
+        <td class="list-first">
+            <img src="../img/dog/dog_39.jpg" class="img-search-list"/>
+        </td>
+        <td class="list-second">
+             <span class="news">
+                牧师为帮流浪狗找新家，将狗狗带入...
+            </span>
+            <div class="time time-list">2019-10-26</div>
+        </td>
+    </tr>
+</table>
+
+
+<footer><div id="footer" class="footer"></div></footer>
+
+</body>
+</html>

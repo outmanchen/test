@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱心捐助</title>
+    <!--引入jquery.js-->
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <!--引入donation.js-->
+    <script type="text/javascript" src="../js/donation.js"></script>
+    <!--引入commonweal.js-->
+    <script type="text/javascript" src="../js/commonweal.js"></script>
+    <!--引入vue.js-->
+    <script src="../js/vue.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--引入bootstrap.css-->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!--引入bootstrap-theme.css-->
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <!--引入index.css-->
+    <link href="../css/index.css" rel="stylesheet">
+    <!--引入commonweal.css-->
+    <link href="../css/commonweal.css" rel="stylesheet">
+    <!--引入donation.css-->
+    <link href="../css/donation.css" rel="stylesheet">
+</head>
+<body>
+<!--首页图片-->
+<div>
+    <img class="img-sf-first" src="../img/img-index-01.jpg" />
+</div>
+<header><div id="header"></div></header>
+<!--main-->
+<label class="point " >您的位置：<a href="index.html" class="weal_div_weal">首页</a> &raquo;<a href="donation.html">爱心捐助</a></label>
+<div align="center">
+    <table class="weal_table" >
+        <tr >
+            <div align="center" class="checkbox check_div" >
+                <ul class="nav nav-tabs donate_nav">
+                    <li id="show" class="active"><a href="show.html">捐助公示</a></li>
+                    <li id="report" class=" "><a href="report.html">审计报告</a></li>
+                    <li id="manage" class=" "><a href="manage.html">管理制度</a></li>
+                </ul>
+            </div>
+        </tr>
+        <tr class="donate_tr">
+            <td class="donate_td">
+                <span class="donate_span_title">收款总额：￥2，569，354，253.73，支付人次：256352</span>
+            </td>
+            <td rowspan="3" class="weal_tdl">
+                <table>
+                    <tr>
+                        <td>
+                            <label class="weal_div_title_left">
+                                推广计划<br>
+                            </label>
+                            <img src="../img/dog/dog_29.jpg" class="img-cw-list"/><br>
+                            <label class="weal_div_title_left">
+                                救助流浪狗<br>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="weal_div_title_left">
+                                推广计划<br>
+                            </label>
+                            <img src="../img/dog/dog_29.jpg" class="img-cw-list"/><br>
+                            <label class="weal_div_title_left">
+                                救助流浪狗<br>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="donate_tr">
+                    <td>
+                        <input type="text" class="form-control donate_input_jzxm"  placeholder="捐赠方">
+                        <input type="text" class="form-control donate_input_jzxm"  placeholder="捐赠项目">
+                        <input type="text" class="form-control donate_input_jzxm"  placeholder="捐款金额">
+                        <input type="text" class="form-control donate_input_jzxm"  placeholder="捐赠时间">
+                        <div class="col-lg-6 donate_input_zffs">
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default
+                        dropdown-toggle" data-toggle="dropdown">支付方式
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
+                                            <a href="#">微信</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">支付宝</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">银联</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
+                        <button type="button" class="btn btn-default">搜索</button>
+                    </td>
+        </tr>
+        <tr>
+            <td class="donate_list_td">
+            <table class="donate_list_box" id="donation_list" >
+                <tr class="table_title" >
+                    <td >
+                        捐赠方
+                    </td>
+                    <td >
+                        捐赠项目
+                    </td>
+                    <td >
+                        捐赠金额
+                    </td>
+                    <td >
+                        捐赠时间
+                    </td>
+                    <td >
+                        支付方式
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+
+
+        <!--分页-->
+        <tr align="center">
+            <td>
+                <ul class="pagination fybox">
+                    <li><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<footer><div id="footer" class="footer"></div></footer>
+</body>
+
+</html>

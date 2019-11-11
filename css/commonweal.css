@@ -1,0 +1,122 @@
+.weal_table{
+    border: 0px solid black;
+    width: 80%;
+    margin:5px 5px 5px 5px;
+    height: 30%;
+}
+.point{
+    color:#7d7c81;
+    margin-left: 16rem;
+    margin-top: 2rem;
+}
+.weal_tr{
+    height: 30%;
+}
+.weal_td{
+    width: 25%;
+    border: 0px solid black;
+}
+.weal_tdl{
+    width: 40%;
+    border: 0px solid black;
+    padding-left: 1rem;
+}
+a{
+    color: #3c3c3c;
+    font-family: YouYuan;
+    margin-left: 1rem;
+}
+a:hover{
+    color:#e4b9c0;
+}
+.check_div{
+    margin-left: 11rem;
+}
+.checkbox_title{
+    font-size: 14px;
+    font-family: YouYuan;
+    color: #3c3c3c;
+}
+.weal_weal_div_title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.weal_div_title_left{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: YouYuan;
+    margin-left: 1rem;
+}
+.weal_div_weal{
+    font-weight:normal;
+    font-size: 14px;
+
+    font-family: YouYuan;
+}
+
+.weal_div_btn{
+    border:0;
+    background-color: #e4b9c0;
+    color: #f0f1f1;
+    font-weight: bold;
+    font-family: YouYuan;
+    margin-left: 2rem;
+}
+.weal_div_btn:hover{
+    border:0;
+    background-color: #e4b9c0;
+    color: #7d7c81;
+    font-weight: bold;
+    font-family: YouYuan;
+    margin-left: 2rem;
+}
+.weal_div_btn:active{
+    border:0;
+    background-color: #e4b9c0;
+    color: #7d7c81;
+    font-weight: bold;
+    font-family: YouYuan;
+    margin-left: 2rem;
+}
+.weal_div_btn:visited{
+    border:0;
+    background-color: #e4b9c0;
+    color: #7d7c81;
+    font-weight: bold;
+    font-family: YouYuan;
+    margin-left: 2rem;
+}
+.weal_div_btn:focus{
+    border:0;
+    background-color: #e4b9c0;
+    color: #7d7c81;
+    font-weight: bold;
+    font-family: YouYuan;
+    margin-left: 2rem;
+}
+
+
+.img-cw-list{
+    width: auto;
+    height: auto;
+    max-width:80%;
+    max-height:80%;
+    vertical-align: top;
+    margin: 5px 10px 5px 5px ;
+    border:3px solid #e4b9c0;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.img-cw-list:hover{
+    transform: scale(1.1);
+}
+
+.fybox{
+    color: #e4b9c0;
+}
+
+/* 半透明的遮罩层 */
